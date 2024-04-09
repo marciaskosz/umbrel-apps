@@ -2,7 +2,7 @@ manifestVersion: 1
 id: marcias-memos-note
 name: Memos Note
 tagline: Super notatnik Memos
-icon: https://svgur.com/i/mvA.svg
+icon: http://10.0.1.2:7421/share/SMPfKRFh
 category: Development
 version: "1.0.0"
 port: 5230
