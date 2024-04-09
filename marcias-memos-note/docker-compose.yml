@@ -1,14 +1,11 @@
-version: "3.7"
-
+version: '3.9'
 services:
+    memos:
+        image: 'neosmemo/memos:stable'
+        volumes:
+            - '~/.memos/:/var/opt/memos'
+        ports:
+            - '5230:5230'
+        container_name: memos
 
-  app_proxy:
-    environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: marcias-memos-note_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+
